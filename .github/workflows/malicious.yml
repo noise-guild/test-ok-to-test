@@ -1,0 +1,10 @@
+on:
+  pull_request
+
+name: Unprotected
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Trying to access ${{ secrets.VERY_SECRET }}"
