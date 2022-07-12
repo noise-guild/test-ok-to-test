@@ -20,6 +20,7 @@ jobs:
 
   # Repo owner has commented /ok-to-test on a (fork-based) pull request
   protected-fork:
+    name: protected-fork
     runs-on: ubuntu-latest
     if:
       github.event_name == 'repository_dispatch' &&
